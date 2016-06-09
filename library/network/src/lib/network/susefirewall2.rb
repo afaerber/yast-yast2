@@ -619,7 +619,7 @@ module Yast
         if !Builtins.contains(
           Ops.get(allowed_ports_divided, "ports", []),
           needed_port
-          ) &&
+        ) &&
             !PortRanges.PortIsInPortranges(
               needed_port,
               Ops.get(allowed_ports_divided, "port_ranges", [])
@@ -2464,7 +2464,7 @@ module Yast
         if Ops.greater_or_equal(
           Builtins.size(GetServicesAcceptRelated(one_zone)),
           0
-          )
+        )
           Builtins.y2milestone("Some ServicesAcceptRelated are defined")
           needs_additional_module = true
           raise Break
