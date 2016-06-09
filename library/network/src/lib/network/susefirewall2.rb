@@ -2655,6 +2655,7 @@ module Yast
 
       nil
     end
+
     # Local function allows ports for requested protocol and zone.
     #
     # @param	list <string> ports to be added
